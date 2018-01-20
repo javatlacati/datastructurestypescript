@@ -4,7 +4,3 @@ language: node_js
 # node_js:
 #  - lts/* # safety net; don't remove
 #  - node # safety net; don't remove
-install:
-  - npm install --dev
-script:
-  - npm test
