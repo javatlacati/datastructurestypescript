@@ -1,0 +1,17 @@
+{
+  "name": "datastructurestypescript",
+  "version": "0.0.1",
+  "private": false,
+  "scripts": {
+    "test": "mocha -r ts-node/register public/tests/**/ArrayBasedBagTest.ts"
+  },
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "ts-node": "^3.3.0",
+    "typings": "^2.1.1"
+  },
+  "devDependencies": {
+    "typings": "^2.1.1"
+  }
+}
