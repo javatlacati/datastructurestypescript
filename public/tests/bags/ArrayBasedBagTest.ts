@@ -22,7 +22,7 @@ describe('Basic tests', () => {
     let arrayBasedBag: bags.Bag<String>;
 
     beforeEach(function () {
-        arrayBasedBag = new bags.ArrayBasedBag(5);
+        arrayBasedBag = new bags.ArrayBasedBag<String>(5);
     });
 
 

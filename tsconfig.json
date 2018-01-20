@@ -1,7 +1,8 @@
 {
-   "compileOnSave": true,
-   "compilerOptions": {
-       "noImplicitAny" : true,
-       "target": "es5"
-   }
+  "compileOnSave": true,
+  "compilerOptions": {
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "target": "es5"
+  }
 }
