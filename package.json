@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": false,
   "scripts": {
-    "pretest": "tsc --module commonjs --sourcemap && nyc mocha -r ts-node/register public/tests/**/ArrayBasedBagTest.ts",
+    "pretest": "nyc mocha -r ts-node/register public/tests/**/ArrayBasedBagTest.ts",
     "test": "nyc report --reporter=json",
     "posttest": "codecov -f coverage/*.json -t b8b6c1c6-4dda-4fd4-8298-443e08034f2c"
   },
