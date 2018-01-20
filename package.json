@@ -3,24 +3,22 @@
   "version": "0.0.1",
   "private": false,
   "scripts": {
-    "test": "mocha -r ts-node/register public/tests/**/ArrayBasedBagTest.ts",
-    "posttest": "istanbul cover node_modules/mocha/bin/_mocha && codecov"
+    "pretest": "tsc --module commonjs --sourcemap && nyc mocha -r ts-node/register public/tests/**/ArrayBasedBagTest.ts",
+    "test": "nyc report --reporter=json",
+    "posttest": "codecov -f coverage/*.json -t b8b6c1c6-4dda-4fd4-8298-443e08034f2c"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/javatlacati/datastructurestypescript.git"
   },
-  "dependencies": {
+  "devDependencies": {
     "chai": "^4.1.2",
     "mocha": "^4.0.1",
     "ts-node": "^3.3.0",
-    "typings": "^2.1.1"
-  },
-  "devDependencies": {
     "typings": "^2.1.1",
-    "istanbul": "^0.3.2",
+    "nyc": "^11.4.1",
     "codecov": "^1.0.1"
   },
   "author": "RUSLAN LOPEZ",
-  "license": "LGPL3.0"
+  "license": "LGPL-3.0-or-later"
 }
