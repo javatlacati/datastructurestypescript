@@ -1,3 +1,5 @@
+ [![license:mit](https://img.shields.io/badge/license-LGPL3.0-green.svg?style=flat-square)](./LICENSE)  [![latest release:?](https://img.shields.io/github/release/datastructurestypescript/datastructurestypescript.svg?style=flat-square)](https://github.com/javatlacati/datastructurestypescript/releases)
+ 
 This project is intended to be a comprehensive data structures framework.
 
 Here i plan to ellaborate my ideas on data structures, feel frree to discuss
