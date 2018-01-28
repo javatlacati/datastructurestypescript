@@ -1,5 +1,5 @@
 /* 
- * Copyright (C) 2017 root
+ * Copyright (C) 2018 Ruslan López Carro
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
