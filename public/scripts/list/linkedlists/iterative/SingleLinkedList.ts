@@ -5,7 +5,13 @@ export class SingleLinkedList<Type> implements List<Type> {
     private root:Node<Type>;
 
     size(): number {
-        return undefined;
+        let size:number = 0;
+        let currentNode:Node<Type> = this.root;
+        while (currentNode != null) {
+            currentNode = currentNode.next;
+            size++;
+        }
+        return size;
     }
 
     isEmpty(): boolean {
