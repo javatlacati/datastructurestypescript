@@ -19,21 +19,26 @@ import {lists} from "../../scripts/list/lists";
 import * as Chai from "chai";
 
 let instancesToTest = [
-    lists.linkedlists.singlelinkedlists.iterative.SingleLinkedList
+    lists.linkedlists.singlelinkedlists.iterative.SingleLinkedList,
+    lists.linkedlists.singlelinkedlists.iterative.TailedSingleLinkedList
     /*,
     lists.linkedlists.singlelinkedlists.recursive.SingleLinkedList.class,
-    lists.linkedlists.singlelinkedlists.iterative.TailedSingleLinkedList.class*/
+*/
 ];
 
 instancesToTest.forEach((instanceToTest) => describe('Basic tests', () => {
-        let arrayBasedBag: lists.List<String>;
+        let list: lists.List<String>;
         beforeEach(function () {
-            arrayBasedBag = new instanceToTest();
+            list = new instanceToTest();
         });
 
         it('size test', () => {
-            const result = arrayBasedBag.size();
+            const result = list.size();
             Chai.expect(result).to.equal(0);
+        });
+
+        it('emptiness test', () => {
+            Chai.expect(list.isEmpty()).to.equal(true);
         });
 
     })

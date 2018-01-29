@@ -17,11 +17,13 @@
 
 import {List as _List} from './list';
 import {SingleLinkedList as _SingleLinkedList} from './linkedlists/iterative/SingleLinkedList';
+import {TailedSingleLinkedList as _TailedSingleLinkedList} from './linkedlists/iterative/TailedSingleLinkedList';
 import {Node as _Node} from './linkedlists/iterative/Node';
 
 /**Works as a package in Java.*/
 export namespace lists.linkedlists.singlelinkedlists.iterative{
     export let SingleLinkedList = _SingleLinkedList;
+    export let TailedSingleLinkedList = _TailedSingleLinkedList;
     export let Node = _Node;
 }
 
