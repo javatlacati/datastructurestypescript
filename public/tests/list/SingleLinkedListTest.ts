@@ -19,8 +19,8 @@ import {lists} from "../../scripts/list/lists";
 import * as Chai from "chai";
 
 let instancesToTest = [
-    lists.linkedlists.singlelinkedlists.iterative.SingleLinkedList,
-    lists.linkedlists.singlelinkedlists.iterative.TailedSingleLinkedList
+    new lists.linkedlists.singlelinkedlists.iterative.SingleLinkedList<String>(),
+    new lists.linkedlists.singlelinkedlists.iterative.TailedSingleLinkedList<String>()
     /*,
     lists.linkedlists.singlelinkedlists.recursive.SingleLinkedList.class,
 */
@@ -29,7 +29,7 @@ let instancesToTest = [
 instancesToTest.forEach((instanceToTest) => describe('Basic tests', () => {
         let list: lists.List<String>;
         beforeEach(function () {
-            list = new instanceToTest();
+            list = instanceToTest;
         });
 
         it('size test', () => {
