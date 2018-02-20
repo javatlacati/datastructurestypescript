@@ -6,3 +6,6 @@ node_js:
   - node
 #  - lts/* # safety net; don't remove
 #  - node # safety net; don't remove
+before_script:
+  - npm install @types/chai
+  - npm install @types/mocha

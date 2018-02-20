@@ -17,6 +17,7 @@
 
 import {bags} from "../../scripts/bag/bags";
 import * as Chai from "chai";
+import * as Mocha from "mocha";
 
 describe('Basic tests', () => {
     let arrayBasedBag: bags.Bag<String>;
