@@ -4,3 +4,6 @@ language: node_js
 # node_js:
 #  - lts/* # safety net; don't remove
 #  - node # safety net; don't remove
+
+script:
+- mocha --harmony -R spec -t 3000 test/es6/
