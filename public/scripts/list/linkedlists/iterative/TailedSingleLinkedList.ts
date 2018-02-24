@@ -1,4 +1,3 @@
-///<reference path="../../../../../typings/globals/node/index.d.ts"/>
 import {List} from "../../list";
 import {Node} from "./Node";
 
