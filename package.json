@@ -4,7 +4,7 @@
   "private": false,
   "scripts": {
     "pretest": "nyc mocha -r ts-node/register public/tests/**/*.ts",
-    "test": "nyc report --reporter=json",
+    "test": "nyc report --reporter=lcov | codecov",
     "posttest": "codecov -f coverage/*.json -t b8b6c1c6-4dda-4fd4-8298-443e08034f2c"
   },
   "repository": {
