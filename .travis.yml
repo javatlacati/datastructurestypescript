@@ -10,3 +10,8 @@ before_script:
   - npm install typescript
   - npm install @types/chai
   - npm install @types/mocha
+
+  script:
+  - npm run test
+  - npm run check-coverage
+  - npm run
