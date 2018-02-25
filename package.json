@@ -4,8 +4,8 @@
   "private": false,
   "scripts": {
     "test": "nyc mocha -r ts-node/register public/tests/**/*.ts",
-    "check-coverage": "nyc report --reporter=lcov",
-    "codecov": "cat coverage/*/lcov.info | codecov"
+    "check-coverage": "nyc report --reporter=text-lcov > coverage.lcov",
+    "codecov":"codecov -f coverage/lcov.info -t b8b6c1c6-4dda-4fd4-8298-443e08034f2c"
   },
   "repository": {
     "type": "git",
