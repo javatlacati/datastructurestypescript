@@ -110,7 +110,7 @@ export class SingleLinkedList<Type> implements List<Type> {
     }
 
     toArray(): Type[] {
-        let retorno: Type[];
+        let retorno: Type[] = new Array(this.size());
         let currentNode: SinglyLinkedNode<Type> = this.root;
         let index = 0;
         while (currentNode != null) {
