@@ -5,7 +5,7 @@
   "scripts": {
     "test": "nyc mocha -r ts-node/register public/tests/**/*.ts",
     "check-coverage": "nyc report --reporter=text-lcov > coverage.lcov",
-    "codecov":"codecov -f coverage/lcov.info -t b8b6c1c6-4dda-4fd4-8298-443e08034f2c"
+    "codecov": "codecov -f coverage/lcov.info -t b8b6c1c6-4dda-4fd4-8298-443e08034f2c"
   },
   "repository": {
     "type": "git",
@@ -18,10 +18,14 @@
     "coveralls": "^3.0.0",
     "mocha": "^4.0.1",
     "nyc": "^11.4.1",
-    "ts-node": "^3.3.0"
+    "ts-node": "^3.3.0",
+    "benchmark": "^2.1.4"
   },
   "main": "dist/index",
   "typings": "dist/index",
   "author": "RUSLAN LOPEZ",
-  "license": "LGPL-3.0-or-later"
+  "license": "LGPL-3.0-or-later",
+  "dependencies": {
+    "@types/benchmark": "^1.0.31"
+  }
 }
