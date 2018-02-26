@@ -1,12 +1,12 @@
-import {List} from "../../list";
-import {Node} from "./Node";
+import {List} from "../../../list";
+import {SinglyLinkedNode} from "./SinglyLinkedNode";
 
 export class TailedSingleLinkedList<Type> implements List<Type> {
-    private head: Node<Type>;
-    private tail: Node<Type>;
+    private head: SinglyLinkedNode<Type>;
+    private tail: SinglyLinkedNode<Type>;
 
   public size(): number {
-        let tmp: Node<Type> = this.head;
+        let tmp: SinglyLinkedNode<Type> = this.head;
         let size = 0;
         while (null != tmp) {
             tmp = tmp.next;
@@ -20,7 +20,7 @@ export class TailedSingleLinkedList<Type> implements List<Type> {
     }
 
     public contains(o: Type): boolean {
-        let current: Node<Type> = this.head;
+        let current: SinglyLinkedNode<Type> = this.head;
         while (current != null) {
             if (o === current.item)
                 return true;
@@ -33,7 +33,7 @@ export class TailedSingleLinkedList<Type> implements List<Type> {
         let size = this.size();
         let retorno: Type[] = [];
         if (size != 0) {
-            let currentNode: Node<Type> = this.head;
+            let currentNode: SinglyLinkedNode<Type> = this.head;
             let index = 0;
             while (currentNode != null) {
                 retorno[index] = currentNode.item;
@@ -49,7 +49,7 @@ export class TailedSingleLinkedList<Type> implements List<Type> {
      */
     public add(element: Type): boolean {
         //        System.out.println("Adding: "+element);
-        return this.addAtEnd(new Node<Type>(element));
+        return this.addAtEnd(new SinglyLinkedNode<Type>(element));
     }
 
     public clear(): void {
@@ -57,7 +57,7 @@ export class TailedSingleLinkedList<Type> implements List<Type> {
         this.tail = null;
     }
 
-    private addAtEnd(aNode: Node<Type>): boolean {
+    private addAtEnd(aNode: SinglyLinkedNode<Type>): boolean {
         // check if the list is empty
         if (this.head == null) {
             //since there is only one element, both head and
@@ -75,8 +75,8 @@ export class TailedSingleLinkedList<Type> implements List<Type> {
 
     public addAfter(element: Type, after: Type): void {
 
-        let tmp: Node<Type> = this.head;
-        let refNode: Node<Type> = null;
+        let tmp: SinglyLinkedNode<Type> = this.head;
+        let refNode: SinglyLinkedNode<Type> = null;
         /*
          * Traverse till given element
          */
@@ -95,7 +95,7 @@ export class TailedSingleLinkedList<Type> implements List<Type> {
         }
         if (refNode != null) {
             //add element after the target node
-            let nd: Node<Type> = new Node<Type>(element);
+            let nd: SinglyLinkedNode<Type> = new SinglyLinkedNode<Type>(element);
             nd.next = tmp.next;
             if (tmp == this.tail) {
                 this.tail = nd;
@@ -111,7 +111,7 @@ public deleteFront():void{
     if(null == this.head){
         throw new Error("Capacity underflow");
     }
-    let tmp:Node<Type> = this.head;
+    let tmp:SinglyLinkedNode<Type> = this.head;
     this.head = tmp.next;
     if(null == this.head){
         this.tail = null;
@@ -120,8 +120,8 @@ public deleteFront():void{
 }
 
     public deleteAfter(after: Type): void {
-        let tmp: Node<Type> = this.head;
-        let refNode: Node<Type> = null;
+        let tmp: SinglyLinkedNode<Type> = this.head;
+        let refNode: SinglyLinkedNode<Type> = null;
         //System.out.println("Traversing to all nodes..");
         /*
          * Traverse till given element
@@ -154,7 +154,7 @@ public deleteFront():void{
             return "";
         } else {
             let salida: String = this.head.toString();
-            let actual: Node<Type> = this.head;
+            let actual: SinglyLinkedNode<Type> = this.head;
             while (actual.next != null) {
                 actual = actual.next;
                 salida.concat(actual.toString().concat());

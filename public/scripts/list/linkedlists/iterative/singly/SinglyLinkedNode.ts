@@ -1,6 +1,6 @@
-export class Node<Type> {
+export class SinglyLinkedNode<Type> {
     private _item: Type;
-    private _next: Node<Type>;
+    private _next: SinglyLinkedNode<Type>;
 
     constructor(item: Type) {
         this._item = item;
@@ -14,11 +14,11 @@ export class Node<Type> {
         this._item = value;
     }
 
-    get next(): Node<Type> {
+    get next(): SinglyLinkedNode<Type> {
         return this._next;
     }
 
-    set next(value: Node<Type>) {
+    set next(value: SinglyLinkedNode<Type>) {
         this._next = value;
     }
 
