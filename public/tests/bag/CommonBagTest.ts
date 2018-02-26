@@ -19,7 +19,7 @@ import {bags} from "../../scripts/bag/bags";
 import * as Chai from "chai";
 import * as Mocha from "mocha";
 
-describe('Basic tests', () => {
+describe('Basic tests of Bag', () => {
     let arrayBasedBag: bags.Bag<String>;
 
     beforeEach(function () {

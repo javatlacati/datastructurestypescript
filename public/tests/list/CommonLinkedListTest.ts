@@ -26,7 +26,7 @@ let instancesToTest = [
 */
 ];
 
-instancesToTest.forEach((instanceToTest) => describe('Basic tests', () => {
+instancesToTest.forEach((instanceToTest) => describe('Basic tests of '+instanceToTest.constructor, () => {
         let list: lists.List<String>;
         beforeEach(function () {
             list = instanceToTest;
@@ -40,6 +40,16 @@ instancesToTest.forEach((instanceToTest) => describe('Basic tests', () => {
         it('emptiness test', () => {
             Chai.expect(list.isEmpty()).to.equal(true);
         });
+
+    it('to array', () =>  {
+        Chai.expect(list.toArray()).to.eql([]);
+        list.add("hola");
+        var arr = ["hola"];
+        Chai.expect(list.toArray()).to.eql(arr);
+        list.add("mundo!");
+        arr = ["hola", "mundo!"];
+        Chai.expect(list.toArray()).to.eql(arr);
+    });
 
     it('add test', () =>  {
         Chai.expect(list.add("hola")).to.equal(true);
