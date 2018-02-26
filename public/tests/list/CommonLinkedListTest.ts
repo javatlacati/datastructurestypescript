@@ -41,5 +41,9 @@ instancesToTest.forEach((instanceToTest) => describe('Basic tests', () => {
             Chai.expect(list.isEmpty()).to.equal(true);
         });
 
+    it('add test', () =>  {
+        Chai.expect(list.add("hola")).to.equal(true);
+        Chai.expect(list.add("mundo!")).to.equal(true);
+        });
     })
 );
