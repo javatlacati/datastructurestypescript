@@ -1,4 +1,5 @@
- [![license:mit](https://img.shields.io/badge/license-LGPL3.0-green.svg?style=flat-square)](./LICENSE)  [![latest release:?](https://img.shields.io/github/release/datastructurestypescript/datastructurestypescript.svg?style=flat-square)](https://github.com/javatlacati/datastructurestypescript/releases)
+ [![license:mit](https://img.shields.io/badge/license-LGPL3.0-green.svg?style=flat-square)](./LICENSE)  [![latest release:?](https://img.shields.io/github/release/datastructurestypescript/datastructurestypescript.svg?style=flat-square)](https://github.com/javatlacati/datastructurestypescript/releases) 
+ [![Build Status](https://travis-ci.org/javatlacati/datastructurestypescript.svg?branch=master)](https://travis-ci.org/javatlacati/datastructurestypescript)
  
 This project is intended to be a comprehensive data structures framework.
 
@@ -20,3 +21,7 @@ those definitions allow the ts compiler to use typed calls to known js code with
 to run unit tests you can use the command:
 
 > npm test
+
+To install types for typescript use the following structure
+
+> npm install --save @types/benchmark
