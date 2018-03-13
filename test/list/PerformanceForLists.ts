@@ -1,5 +1,5 @@
 import * as Benchmark from 'benchmark';
-import {lists} from "../../scripts/list/lists";
+import {lists} from "../../../scripts/list/lists";
 
 let instancesToBenchmark = [
     new lists.linkedlists.singlelinkedlists.iterative.SingleLinkedList<String>(),

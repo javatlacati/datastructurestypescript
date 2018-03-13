@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import {lists} from "../../scripts/list/lists";
+import {lists} from "../../../scripts/list/lists";
 import * as Chai from "chai";
 
 let instancesToTest = [

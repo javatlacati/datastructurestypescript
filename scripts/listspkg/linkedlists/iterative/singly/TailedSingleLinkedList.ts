@@ -1,5 +1,7 @@
 import {List} from "../../../list";
 import {SinglyLinkedNode} from "./SinglyLinkedNode";
+import {Iterator} from "./Iterator";
+import {Symbol} from "./Symbol";
 
 export class TailedSingleLinkedList<Type> implements List<Type> {
     private head: SinglyLinkedNode<Type>;
@@ -167,11 +169,9 @@ public printList():void {
     console.log(this.getStrings());
 }
 
-
-
-    public iterator(): Iterator<Type> {
+    public iterator() { //Iterator<Type>
         let arr = this.toArray();
-        return arr[Symbol.iterator]();
+        `return arr[Symbol.iterator]();`
     }
 
 

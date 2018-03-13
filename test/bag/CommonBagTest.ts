@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import {bags} from "../../scripts/bag/bags";
+import {bags} from "../../../scripts/bag/bags";
 import * as Chai from "chai";
 import * as Mocha from "mocha";
 
