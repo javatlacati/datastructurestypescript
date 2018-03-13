@@ -20,6 +20,7 @@ import {SingleLinkedList as _SingleLinkedList} from './linkedlists/iterative/sin
 import {TailedSingleLinkedList as _TailedSingleLinkedList} from './linkedlists/iterative/singly/TailedSingleLinkedList';
 import {SinglyLinkedNode as _SinglyLinkedNode} from './linkedlists/iterative/singly/SinglyLinkedNode';
 import {DoublyLinkedList as _DoublyLinkedList} from "./linkedlists/iterative/doubly/DoublyLinkedList";
+import {ArrayBasedList as _ArrayBasedList} from "./ArrayBasedList";
 
 /**Works as a package in Java.*/
 export namespace lists.linkedlists.singlelinkedlists.iterative{
@@ -31,4 +32,5 @@ export namespace lists.linkedlists.singlelinkedlists.iterative{
 
 export namespace lists{
     export type List<Item> = _List<Item>;
+    export let ArrayBasedList = _ArrayBasedList;
 }
