@@ -1,6 +1,6 @@
 #dist: trusty
 language: node_js
-sudo: false
+#sudo: false
 
 node_js:
   - node
@@ -11,7 +11,7 @@ before_script:
   - npm install @types/chai
   - npm install @types/mocha
 
-  script:
+script:
   - npm run test
   - npm run check-coverage
   - npm run codecov
