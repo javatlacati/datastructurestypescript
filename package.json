@@ -26,6 +26,6 @@
   "author": "RUSLAN LOPEZ",
   "license": "LGPL-3.0-or-later",
   "dependencies": {
-    "@types/benchmark": "^1.0.31"
+    "@types/benchmark": "^2.1.0"
   }
 }
