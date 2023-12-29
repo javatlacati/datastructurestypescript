@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@types/npm": "^7.19.0",
-    "chai": "^4.1.2",
+    "chai": "^5.0.0",
     "codecov": "^3.6.1",
     "coveralls": "^3.0.0",
     "mocha": "^10.2.0",
